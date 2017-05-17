@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html style="opacity: 0;">
+
+<head>
+    <title>Testing stuff</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- if using browserify, uncomment the line below -->
+    <!-- <link rel="stylesheet" type="text/css" href="./dist/style.css"> -->
+</head>
+
+<body>
+	<div id="MainOverlay" class="MainOverlay Hidden"></div>
+	<div id="popup" class="Hidden" style="position: absolute; left: 50%; top:20%;">
+		<div class="popUpContainer">
+			<div class="headerBar">
+				<div class="title">New Zealand</div>
+				<div onclick="Closing();" class="closer">X</div>
+			</div>
+			<div class="mainImg">
+				<img id="Pop1" class="Hidden" src="/Pictures/new-zealand-Circle.jpg">
+	    		<img id="Pop2" class="Hidden" src="/Pictures/new-zealand-Rectangle.jpg">
+	    		<img id="Pop3" class="Hidden" src="/Pictures/new-zealand-Square.jpg">
+				<img id="Pop4" class="Hidden" src="/Pictures/sun-rise-Triangle.jpg">
+			</div>
+			
+		</div>
+	</div>		
+    <div class="container">
+    	<div class="HeaderBox">
+    		<div class="TextWrap">
+    			<h1>Just some nice images<span class="trade">&trade;</span></h1>
+    			<p>This is a test project for Xfive.co. It should teach me how to work with their generator and verify my skills as a front-end developer. I'll do my best.</p>
+    		</div>
+    	</div>
+    	<div class="ImageContainer">
+    		<div class="Item">
+    			<div onclick="ClickData();" class="overlay">
+	    			<div class="clickMe">
+	    				<span class="clickText">
+	    					Click Here to view
+	    				</span>
+	    			</div>
+	    			<img id="1" class="circle" src="/Pictures/new-zealand-Circle.jpg">
+    			</div>
+    		</div>
+    		<div class="Item">
+	    		<div onclick="ClickData();" class="overlay">
+	    			<div class="clickMe">
+	    				<span class="clickText">
+	    					Click Here to view
+	    				</span>
+	    			</div>
+	    			<img id="2" class="circle" src="/Pictures/new-zealand-Rectangle.jpg">
+	    		</div>
+    		</div>
+    		<div class="Item">
+	    		<div onclick="ClickData();" class="overlay">
+	    			<div class="clickMe">
+	    				<span class="clickText">
+	    					Click Here to view
+	    				</span>
+	    			</div>
+	    			<img id="3" class="circle" src="/Pictures/new-zealand-Square.jpg">
+	    		</div>
+    		</div>
+    		<div class="Item">
+	    		<div onclick="ClickData();" class="overlay">
+	    			<div  class="clickMe">
+	    				<span class="clickText">
+	    					Click Here to view
+	    				</span>
+	    			</div>
+	    			<img id="4" class="circle" src="/Pictures/sun-rise-Triangle.jpg">
+	    		</div>
+    		</div>
+    	</div>
+    </div>
+    <!-- if using loader, use the line below -->
+    <script type="text/javascript" src="./bower_components/Loader/loader.js" id="loaderjs" data-app="./js/app.js"></script>
+    <!-- otherwise if using browserify, comment out the above line and uncomment the following line -->
+    <!-- <script type="text/javascript" src="./dist/app-browserify.js"></script> -->
+</body>
+
+</html>
